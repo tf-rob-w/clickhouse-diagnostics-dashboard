@@ -7,16 +7,15 @@ Bundles are created by the [clickhouse-diagnostics tool][1] and typically come a
 ## Use
 
 ```bash
-cd results_server
 npm install
 npm run dev
 ```
 
 Then drop onto the page (or use the buttons):
 
-- a `clickhouse_diagnostic_<ts>.tar.gz` (or `clickhouse_backup_<ts>.tar.gz`) — decompressed and read in the browser, no extraction needed;
-- an extracted bundle folder;
-- a whole `clickhouse_results/` folder — every bundle in it is loaded and selectable from the header.
+- a `clickhouse_diagnostic_<ts>.tar.gz` (or `clickhouse_backup_<ts>.tar.gz`) — decompressed and read in the browser, no extraction needed
+- an extracted bundle folder
+- a directory of bundles — every bundle in it is loaded and selectable from the header.
 
 Bundles live in memory only; reloading the tab clears them.
 
